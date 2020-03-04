@@ -10,7 +10,6 @@
 </head>
 <body>
   <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" >
-<div>
   <fieldset class="block">
     <legend>Personal information</legend>
     <lable class="custom-lable">
@@ -30,8 +29,6 @@
       <input type="checkbox" name="areement">
     </label>
   </fieldset>
-  </div>
-  <div>
     <fieldset class="block">
       <legend>Registration</legend>
       <lable class="custom-lable">
@@ -42,17 +39,15 @@
         <input type="password" name="password" id="password" minlength="4" required>
       </label>
     </fieldset>
-    </div>
-    <div>
       <fieldset class="block">
         <legend>An instresting fact about you!</legend>
-        <lable class="custom-lable">
-        Do you love cats?
+        <lable class="custom-lable">Do you love cats?</lable>
+        <label for="yes">
           <input type="radio" name="radio" id="yes">
-          <label for="yes">Yes</label>
+          Yes</label>
+          <label for="no">
           <input type="radio" name="radio" id="no">
-          <label for="no">No</label>
-        </lable>
+          No</label>
         <label class="custom-lable">What is your favorite color?
           <input type="color" name="color" id="color">
         </label>
@@ -70,11 +65,7 @@
           <input type="range" name="range" min="0" max="100" value="0">
         </label>
       </fieldset>
-      </div>
-    </fieldset>
-  </div>
-  <div >
-    <fieldset class="block" >
+    <fieldset class="block">
       <legend>Additional info:</legend>
       <lable class="custom-lable">
       Comments:
@@ -87,7 +78,6 @@
         </select>
       </label>
     </fieldset>
-    </div>
     <div class="submit-button" >
       <button type="submit" onsubmit="onSubmit()">Submit</button>
     </div>
